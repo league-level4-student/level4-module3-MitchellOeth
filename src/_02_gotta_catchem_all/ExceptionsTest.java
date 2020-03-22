@@ -34,7 +34,7 @@ class ExceptionsTest {
 	@Test
 	public void testDivideByZeroException() {
 		assertEquals(1, ExceptionMethods.divide(4, 4));
-		assertEquals(0, ExceptionMethods.divide(1.5, 0.0));
+		assertEquals(0, ExceptionMethods.divide(0.0, 1.0));
 	}
 	
 	//4. In the ExceptionMethods class, write a method called reverseString that takes a
@@ -44,10 +44,8 @@ class ExceptionsTest {
 	//5. Complete the JUnit test method to test the reverseStringMethod.
 	@Test
 	public void testReverseString() {
-		
+		assertEquals("elppa", ExceptionMethods.reverseString("apple"));
+		assertEquals("egnaro", ExceptionMethods.reverseString("orange"));
+		assertEquals("ananab", ExceptionMethods.reverseString("banana"));
 	}
-	
-	
-	
-
 }

@@ -7,4 +7,13 @@ public class ExceptionMethods {
 		}
 		return a/b;
 	}
+	public static String reverseString(String a) {
+		a = a.toLowerCase();
+		char[] b = a.toCharArray();
+		String c = "";
+		for (int i = a.length() - 1; i >= 0; i--) {
+			c += b[i];
+		}
+		return c;
+	}
 }
